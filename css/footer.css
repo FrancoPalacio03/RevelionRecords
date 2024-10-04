@@ -1,0 +1,77 @@
+@import "../css/index.css";
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Añadir un espacio entre columnas */
+}
+
+
+#footer-container div {
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+
+#footer-container h5 {
+    font-size: 30px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#location-container iframe {
+    width: 100%; /* Asegura que el mapa ocupe todo el ancho */
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer-description {
+        font-size: 15px;
+    }
+
+    #location-container {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .footer-description {
+        font-size: 14px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-container div {
+        padding-bottom: 10px;
+    }
+
+    #footer-container h5 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    #location-container {
+        height: 200px;
+        width: 90%;
+    }
+}

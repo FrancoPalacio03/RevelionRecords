@@ -1,0 +1,122 @@
+:root {
+    --primary: #0c0e12;
+    --secondary: #f0f1f5;
+
+  }
+  
+body{
+    background-color: var(--primary);
+    color: var(--secondary); /* Texto claro */
+    font-family: 'Inter', sans-serif;
+}
+
+main, header { /* Fuente moderna */
+    margin: 0;
+    padding: .5rem 20rem;
+    text-align: justify; /* Justificación del texto */
+}
+
+/* Margen y max-width para vista escritorio */
+.container {
+    margin: 0 auto;
+    max-width: 1200px; /* Ancho máximo de la página */
+    padding: 0 20px; /* Margen interno para asegurar que no quede pegado al borde */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: var(--primary); /* Color oscuro para el navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.nav-link {
+    color: #adb5bd; /* Texto de los enlaces en gris claro */
+    font-size: 1rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff; /* Cambio a blanco al pasar el mouse */
+}
+
+.navbar-toggler {
+    border-color: #f8f9fa;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Líneas blancas */
+}
+/* Estilo del botón de acción */
+.btn-secondary {
+    background-color: #277256; /* Verde similar al de la imagen */
+    border-color: #34d399;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #2aa182; /* Más oscuro al hacer hover */
+    border-color: #2aa182;
+}
+
+/* Estilo para el selector de tema */
+#theme-toggle {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#theme-toggle:hover {
+    color: #34d399;
+}
+
+/* Estilos para la sección hero */
+.hero {
+    background-color: var(--primary); /* Fondo oscuro */
+    text-align: center;
+    padding: 6rem 0;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #adb5bd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main, header{
+        padding: 0;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
