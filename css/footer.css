@@ -49,6 +49,7 @@ footer {
     }
     footer {
         position: static;
+        padding-top: 300px;
     }
 }
 

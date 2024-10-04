@@ -73,19 +73,7 @@ main, header { /* Fuente moderna */
     border-color: #2aa182;
 }
 
-/* Estilo para el selector de tema */
-#theme-toggle {
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-right: 10px;
-}
 
-#theme-toggle:hover {
-    color: #34d399;
-}
 
 /* Estilos para la sección hero */
 .hero {
