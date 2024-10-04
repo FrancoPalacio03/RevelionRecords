@@ -125,6 +125,9 @@ button[type="button"]:hover {
   #buttons-send-container button {
     width: 150px;
   }
+  .section-container {
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 425px){
