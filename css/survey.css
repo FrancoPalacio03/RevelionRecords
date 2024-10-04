@@ -34,10 +34,6 @@
   font-family: "Lato", system-ui;
 }
 
-#gender option {
-  background: #1F1F1F;
-  color: #f8f9fa;
-}
 
 .form-group label {
   display: block;
@@ -128,6 +124,7 @@ button[type="button"]:hover {
   .section-container {
     padding: 1rem;
   }
+
 }
 
 @media only screen and (max-width: 425px){
@@ -136,6 +133,7 @@ button[type="button"]:hover {
     flex-direction: column;
     align-items: center;
   }
+
 
   #buttons-send-container button {
     width: 70%;
